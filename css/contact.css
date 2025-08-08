@@ -1,0 +1,72 @@
+/* ===== KOMPONEN CONTACT ===== */
+.contact-section {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+}
+
+.contact-card {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.contact-card h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;           
+  font-size: 16px;
+  font-family: inherit;
+  resize: vertical;         
+  box-sizing: border-box;      
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0D233F;
+  box-shadow: 0 0 0 2px rgba(13,35,63,0.2);
+}
+
+.contact-form button {
+  width: 100%;                 
+  padding: 16px 0;              
+  background-color: #ddd;
+  border: none;
+  border-radius: 8px;           
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+.contact-form button:hover {
+  background-color: #ccc;
+  transform: translateY(-2px);
+}

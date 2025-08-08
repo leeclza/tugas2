@@ -4,57 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aboutMe.css">
+    <link rel="stylesheet" href="css/biodata.css">
+    <link rel="stylesheet" href="css/pendidikan.css">
+    <link rel="stylesheet" href="css/pengalaman.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/toolsSkills.css">
 
     <link rel="shorcut icon"
-    href="image/itera.png"
+    href="image/logo/itera.png"
     type="image/x-icon">
 
 </head>
 <body>
-    <!-- NAVBAR -->
- <header>
+    <div class="wrapper">
+
+      <!-- NAVBAR -->
+      <header>
         <nav>
             <div class="navbar-container">
+              <a href="#" class="logoa">
                 <div class="logo">
-                    <img src="image/Leon.jpg">
-                    <span>Leon</span>
+                  <img src="image/paspoto.jpg">
+                  <span>Leon</span>
                 </div>
-                <!-- Lists done -->
+              </a>
                 <ul class="nav-links">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/page/CV.html">CV</a></li>
-                    <li><a href="/page/tables.html">Contact</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#tools-skills">Tools & Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <!-- NAVBAR TUTUP -->
-    
-    <section id="pendidikan" class="section">
-  <h2>Riwayat Pendidikan</h2>
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Tahun</th>
-        <th>Institusi</th>
-        <th>Jenjang</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2015 - 2018</td>
-        <td>SMK Negeri 60000</td>
-        <td>SMK</td>
-      </tr>
-      <tr>
-        <td>2019 - Sekarang</td>
-        <td>ITERA</td>
-        <td>S5 Tank</td>
-      </tr>
-    </tbody>
-  </table>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      <h1>Hai saya Leon</h1>
+      <p>
+        Saat ini saya merupakan mahasiswa semester 3 Program Studi Teknik Informatika di Institut Teknologi Sumatera.
+        Saya memiliki minat besar dalam pengembangan front-end dan sedang aktif memperdalam keterampilan ReactJS.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="image/aset1.png" alt="Coding Cartoon">
+    </div>
+  </div>
 </section>
+
+<!-- BIODATA -->
+<section class="biodata-container">
+  <h2>Biodata Diri</h2>
+  <div class="biodata-grid">
+    <div class="biodata-item">
+      <span class="label">Nama</span>
+      <span class="value">: Christopher Leon Saputra</span>
+    </div>
+    <div class="biodata-item">
+      <span class="label">NIM</span>
+      <span class="value">: 124140097</span>
+    </div>
+    <div class="biodata-item">
+      <span class="label">Program Studi</span>
+      <span class="value">: Teknik Informatika</span>
+    </div>
+    <div class="biodata-item">
+      <span class="label">Tanggal Lahir</span>
+      <span class="value">: 07 Juni 2006</span>
+    </div>
+    <div class="biodata-item">
+      <span class="label">Alamat</span>
+      <span class="value">: Tanjung Karang Timur, Bandar Lampung</span>
+    </div>
+    <div class="biodata-item">
+      <span class="label">Jenis Kelamin</span>
+      <span class="value">: Laki-laki</span>
+    </div>
+    <div class="biodata-item">
+      <span class="label">Instagram</span>
+      <span class="value">: <a href="https://www.instagram.com/c.leonsra/" target="_blank">@c.leonsra</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- PENDIDIKAN -->
+<section id="pendidikan" class="pendidikan-section">
+  <h2>Pendidikan</h2>
+  <div class="pendidikan-table-wrapper">
+    <table class="pendidikan-table">
+      <thead>
+        <tr>
+          <th>Tahun</th>
+          <th>Institusi</th>
+          <th>Jenjang</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2012 - 2018</td>
+          <td>SD Fransiskus 2 Rawa Laut, Bandar Lampung</td>
+          <td>SD</td>
+        </tr>
+        <tr>
+          <td>2018 - 2021</td>
+          <td>SMP Xaverius 2 Bandar Lampung</td>
+          <td>SMP</td>
+        </tr>
+        <tr>
+          <td>2021 – 2024</td>
+          <td>SMA Xaverius Bandar Lampung</td>
+          <td>SMA | MIPA</td>
+        </tr>
+        <tr>
+          <td>2024 – Sekarang</td>
+          <td>ITERA</td>
+          <td>S1 Teknik Informatika</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- PENGALAMAN -->
+<section id="pengalaman" class="pengalaman-section">
+  <h2>Pengalaman</h2>
+  <div class="pengalaman-container">
+
+    <article class="expCard">
+      <div class="expHeader">2024</div>
+      <ul class="expList">
+        <li>
+          <strong>First Meet Teknik Informatika Angkatan 2024</strong>
+          <p>Sebagai Panitia Divisi Transportasi.</p>
+        </li>
+        <li>
+          <strong>Mini Bootcamp 1.0 HMIF ITERA</strong>
+          <p>Sebagai peserta bootcamp yang berhasil membuat dan merilis website sederhana sebagai showcase.</p>
+        </li>
+      </ul>
+    </article>
+
+    <article class="expCard">
+      <div class="expHeader">2025</div>
+      <ul class="expList">
+        <li>
+          <strong>Pemilihan Ketua Angkatan Teknik Informatika Angkatan 2024</strong>
+          <p>Sebagai Panitia Divisi IT.</p>
+        </li>
+        <li>
+          <strong>BPA Teknik Informatika Angkatan 24</strong>
+          <p>Sebagai Pengurus Angkatan Divisi IT.</p>
+        </li>
+        <li>
+          <strong>PPLK ITERA 2025</strong>
+          <p>Sebagai Staff Front End Divisi IMTEK.</p>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+
+
+<!-- TOOLS & SKILLS -->
+<section id="tools-skills" class="tools-section">
+  <h2>Tools & Skills</h2>
+  <div class="tools-grid">
+
+    <div class="toolSkill">
+      <img src="image/logo/fe.png" alt="HTML, CSS, JS">
+      <h3>HTML, CSS, JS</h3>
+      <p>Ketiga bahasa ini merupakan awal dunia pemrograman saya dan sudah mempelajarinya sejak 2022 – Sekarang.</p>
+    </div>
+
+    <div class="toolSkill">
+      <img src="image/logo/react.png" alt="React">
+      <h3>React</h3>
+      <p>Berpengalaman dengan React, TypeScript (TSX), JSX, dan Tailwind CSS untuk styling responsif.</p>
+    </div>
+
+    <div class="toolSkill">
+      <img src="image/logo/bootstrap.png" alt="Bootstrap">
+      <h3>Bootstrap</h3>
+      <p>Framework ini sering saya gunakan untuk mempermudah desain web.</p>
+    </div>
+
+    <div class="toolSkill">
+      <img src="image/logo/python.png" alt="Basic Python">
+      <h3>Basic Python</h3>
+      <p>Saya mulai belajar bahasa pemrograman Python sejak 2024.</p>
+    </div>
+    
+    <div class="toolSkill">
+      <img src="image/logo/c++.png" alt="Basic C++">
+      <h3>Basic C++</h3>
+      <p>Saya mulai mempelajari bahasa pemrograman C++ sejak 2024 – Sekarang.</p>
+    </div>
+
+    <div class="toolSkill">
+      <img src="image/logo/github.png" alt="Error">
+      <h3>Github</h3>
+      <p>Saya menggunakan Github untuk projek kerjasama tim.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+  <div class="contact-card">
+    <h3>Drop Me a Message</h3>
+    <form action="#contact" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="social-icons">
+            <a href="https://www.google.com/" target="_blank"><img src="image/logo/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/c.leonsra/" target="_blank"><img src="image/logo/ig.png" alt="Instagram"></a>
+            <a href="https://www.google.com/" target="_blank"><img src="image/logo/x.jpg" alt="Twitter/X"></a>
+        </div>
+        <p class="footer-menu"><a href="#" style="text-decoration: none; color: #808080;">Home</a></p>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright ©2025; Leon</p>
+    </div>
+</footer>
 
 </body>
 </html>

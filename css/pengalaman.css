@@ -1,0 +1,100 @@
+/* ===== KOMPONEN PENGALAMAN ===== */
+.pengalaman-section {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.pengalaman-section h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #000;
+  display: inline-block;       
+  border-bottom: 2px solid #000; 
+  padding-bottom: 8px;           
+}
+
+.pengalaman-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-right: 15px;
+}
+
+.expCard {
+  background-color: #fff;
+  width: 90%;
+  max-width: 320px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.expCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.expHeader {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.expHeader::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  border-bottom: 2px solid #000;
+  border-radius: 2px;
+}
+
+.expList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.expList li {
+  text-align: left;
+}
+
+.expList li::marker {
+  content: "•";
+  color: #0D233F;
+  font-size: 20px;
+}
+
+.expList li strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.expList li p {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .pengalaman-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

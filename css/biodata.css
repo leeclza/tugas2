@@ -1,0 +1,38 @@
+/* ===== KOMPONEN BIODATA ===== */
+.biodata-container {
+  max-width: 500px;
+  width: 70%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.biodata-container h2 {
+  margin-bottom: 20px;
+  color: #0D233F;
+  font-size: 24px;
+  padding-bottom: 4px;
+}
+
+.biodata-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 12px;
+  column-gap: 20px;
+}
+
+.biodata-item {
+  display: contents;
+}
+
+.biodata-item .label {
+  font-weight: bold;
+  color: #333;
+}
+
+.biodata-item .value {
+  color: #555;
+}

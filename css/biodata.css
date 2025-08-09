@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   row-gap: 12px;
-  column-gap: 20px;
+  column-gap: 20px;  
 }
 
 .biodata-item {
